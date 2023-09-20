@@ -111,8 +111,8 @@
 @media (max-width: 992px) {
    /* Sembunyikan gambar pada perangkat berukuran kecil */
   .custom-image {
-    display: 52px;
-    height: 800px;
+   
+    display: none;
   
   }
   
