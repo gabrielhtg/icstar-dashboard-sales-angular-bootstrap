@@ -1,0 +1,59 @@
+/* landing-page.component.css */
+
+/* Gaya kontainer landing page */
+.landing-page {
+    display: flex;
+    justify-content: center; /* Pusatkan konten secara horizontal */
+    align-items: center; /* Pusatkan konten secara vertikal */
+    height: 100vh; /* Gunakan tinggi layar penuh */
+    /* Hapus baris berikut untuk menjaga latar belakang putih
+    background-color: #5E3FDE; */
+    color: #FFFFFF; /* Warna teks tetap putih */
+  }
+  
+  /* Gaya konten di tengah */
+  .center-content {
+    text-align: center; /* Pusatkan konten secara horizontal */
+  }
+  
+  /* Gaya logo aplikasi */
+  .app-logo {
+    width: 290px; /* Lebar gambar logo */
+    height: 190px; /* Tinggi gambar logo */
+    display: block; /* Agar gambar logo tampil di tengah */
+    margin: 0 auto; /* Pusatkan gambar logo secara horizontal */
+    margin-bottom: 20px; /* Atur jarak antara gambar logo dan teks di bawahnya */
+  }
+  
+  /* Gaya untuk teks besar di atas logo */
+  
+  h1 {
+    color: black; /* Mengubah warna teks menjadi hitam */
+    margin: 50px 0; /* Atur jarak atas dan bawah dari teks */
+    font-size: 36px; /* Ukuran font teks */
+  }
+  
+  /* Gaya untuk teks di bawah logo */
+  p {
+    font-size: 24px; /* Ukuran font teks */
+    margin: 20px 0; /* Atur jarak atas dan bawah dari teks */
+  }
+  
+  /* Gaya untuk tombol "Continue" */
+  .btn-primary {
+    font-size: 24px; /* Ukuran font tombol */
+    padding: 10px 30px; /* Atur padding tombol (atas-bawah kiri-kanan) */
+    background-color: #3703f1; /* Warna latar tombol */
+    color: 
+    #f5f5f5; /* Warna teks tombol */
+    border: none; /* Hapus border tombol */
+    border-radius: 10px; /* Sudut bulat tombol */
+    cursor: pointer; /* Ubah pointer saat mengarahkan ke tombol */
+  }
+  
+  /* Gaya saat mengarahkan kursor ke tombol */
+  .btn-primary:hover {
+    background-color: #020108; /* Warna latar tombol saat hover */
+    color: #140202; /* Warna teks tombol saat hover */
+  }
+  
