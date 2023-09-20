@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <!-- Kolom Kiri -->
+    <div class="col-md-6">
+      <!-- Form Login -->
+      <form class="custom-login-form">
+        <!-- Input Username -->
+        <div class="custom-input">
+          <label for="emailUsername">Username</label>
+          <input type="text" class="form-control" id="emailUsername" placeholder="">
+        </div>
+        <!-- Input Password -->
+        <div class="custom-input">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="">
+        </div>
+        <!-- Tombol Login -->
+        <div class="text-center mt-3">
+          <button type="button" class="btn btn-primary" [routerLink]="['/dashboard']">LOGIN</button>
+        </div>
+        <!-- Tautan "Lupa Password?" dan "Remember Me" Bersebelahan -->
+        <div class="text-center mt-3">
+          <a href="/lupa-password" class="forgot-password-link">Lupa Password?</a>
+          <div class="custom-checkbox">
+            <input type="checkbox" id="rememberMe">
+            <label for="rememberMe">Remember Me</label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Kolom Kanan -->
+    <div class="col-md-6">
+      <!-- Gambar Samping -->
+      <img src="assets/rapat.jpg" alt="Rapat" class="custom-image">
+    </div>
+  </div>
+</div>
