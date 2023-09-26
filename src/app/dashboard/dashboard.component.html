@@ -1,1 +1,188 @@
-<p>dashboard works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome CSS (gunakan path yang benar) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <!-- Your custom CSS (dashboard.component.css) -->
+  <link href="dashboard.component.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Tombol hamburger untuk mengaktifkan/menampilkan sidebar -->
+        <button id="sidebarToggle" class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Nama Aplikasi atau Logo yang Ditengah -->
+        <a class="navbar-brand mx-auto" href="#">IFT GRUP</a>
+        <!-- Tombol untuk Notifikasi dan Profil (dropdown) -->
+        <div class="navbar-nav ml-auto">
+          <a class="nav-link" href="#">
+            <i class="fas fa-bell"></i> Notifikasi
+          </a>
+          <div class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-user"></i> Profil
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Lihat Profil</a></li>
+              <li><a class="dropdown-item" href="#">Profil Saya</a></li>
+              <li><a class="dropdown-item" href="#">Pengaturan</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Keluar</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <nav class="col-md-2 d-none d-md-block sidebar">
+          <div class="position-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <i class="fas fa-home"></i>
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="businessUnitDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-chart-bar"></i>
+                  Business Unit
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="businessUnitDropdown">
+                  <li><a class="dropdown-item" href="#">Solutif</a></li>
+                  <li><a class="dropdown-item" href="#">KBNI</a></li>
+                  <li><a class="dropdown-item" href="#">DAI</a></li>
+                  <li><a class="dropdown-item" href="#">ONE</a></li>
+                  <li><a class="dropdown-item" href="#">AOT</a></li>
+                  <li><a class="dropdown-item" href="#">IFT</a></li>
+                  <li><a class="dropdown-item" href="#">GIT</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="pipelineDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-cogs"></i>
+                  Pipeline Summary
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="pipelineDropdown">
+                  <li><a class="dropdown-item" href="#">HOT</a></li>
+                  <li><a class="dropdown-item" href="#">WARM</a></li>
+                  <li><a class="dropdown-item" href="#">COLD</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-users"></i>
+                  User
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                  <li><a class="dropdown-item" href="#">Add User</a></li>
+                  <li><a class="dropdown-item" href="#">Remove User</a></li>
+                  
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main class="col-md-10 ms-sm-auto col-lg-10 px-md-4">
+          <div class="content">
+            <div class="content-header">
+              <h1>Revenue Achievement</h1>
+            </div>
+            <button id="prevButton" class="slider-button left">&lt;</button>
+            <button id="nextButton" class="slider-button right">&gt;</button>
+
+            <div class="content-body">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="info-box">
+                    <h3>PT.Solutif</h3>
+                    <p>Total Revenue: Rp.2000,00</p>
+                    <p>Total GP: Rp.2000,00</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="info-box">
+                    <h3>PT.ONE</h3>
+                    <p>Total Revenue: Rp.2000,00</p>
+                    <p>Total GP: Rp.2000,00</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="info-box">
+                    <h3>PT.KBNI</h3>
+                    <p>Total Revenue: Rp.2000,00</p>
+                    <p>Total GP: Rp.2000,00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Konten kedua -->
+          <div class="content">
+            <div class="content-header">
+              <h1><b>Pipeline Summary Based on Status</b></h1>
+            </div>
+            <div class="content-body">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="info-box">
+                    <h3>HOT</h3>
+                    <p>Revenue:</p>
+                    <p>IDR: Rp.2000,00</p>
+                    <br>
+                    <p>Gross Profit:</p>
+                    <p>IDR: Rp.14.000,00</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="info-box">
+                    <h3>WARM</h3>
+                    <p>Revenue:</p>
+                    <p>IDR: Rp.2000,00</p>
+                    <br>
+                    <p>Gross Profit:</p>
+                    <p>IDR: Rp.14.000,00</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="info-box">
+                    <h3>COLD</h3>
+                    <p>Revenue:</p>
+                    <p>IDR: Rp.2000,00</p>
+                    <br>
+                    <p>Gross Profit:</p>
+                    <p>IDR: Rp.14.000,00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script JavaScript Anda di sini -->
+</body>
+</html>

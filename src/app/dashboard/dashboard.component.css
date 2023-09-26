@@ -1,0 +1,122 @@
+/* dashboard.component.css */
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0px; /* Sidebar akan sembunyi di awal (ke kiri) */
+  bottom: 0;
+  z-index: 1000;
+  padding: 20px;
+  background-color: #646269;
+  width: 250px; /* Lebar sidebar saat ditampilkan */
+  transition: left 0.3s ease; /* Animasi perpindahan sidebar */
+}
+
+/* Aktifkan tampilan sidebar ketika class 'active' ditambahkan */
+.sidebar.active {
+  left: 10;
+}
+
+/* Tombol hamburger Styles */
+.navbar-toggler {
+  background-color: #3008c4; /* Warna latar belakang tombol hamburger */
+  border: none; /* Hapus border tombol */
+  text-align: center;
+}
+
+/* Navigasi dropdown Styles */
+.navbar-nav .nav-link.dropdown-toggle::after {
+  /* Ikon panah dropdown */
+  content: "\f107"; /* Unicode untuk ikon panah bawah Font Awesome */
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* Content Styles */
+.content {
+  padding: 100px; /* Ruang padding untuk konten */
+}
+
+/* Content Header Styles */
+.content-header h1 {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+/* Info Box Styles */
+.info-box {
+  background-color: #eeeeee;
+  border: 1px solid #1d2cb1;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.info-box h3 {
+  font-size: 19px;
+  text-align: center;
+}
+
+/* Font Awesome Icon Styles */
+.nav-link i {
+  margin-right: 10px;
+}
+
+/* Bootstrap Utility Classes */
+.text-center {
+  text-align: center !important;
+}
+
+.text-primary {
+  color: #ffffff !important;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.text-warning {
+  color: #ffc107 !important;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
+
+/* Gaya untuk tombol "<" dan ">" */
+.slider-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+/* Gaya untuk posisi tombol "<" di ujung kiri */
+.slider-button.left {
+  float: left;
+}
+
+/* Gaya untuk posisi tombol ">" di ujung kanan */
+.slider-button.right {
+  float: right;
+}
+
+/* Gaya untuk konten box */
+.content-box {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Gaya untuk setiap elemen dalam konten box */
+.content-box > div {
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
